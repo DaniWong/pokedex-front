@@ -1,4 +1,4 @@
-# Pokedex Front End by Daniel wong
+# Pokedex Front End
 
 This is a front end component for the Pokedex project
 
