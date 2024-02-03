@@ -105,7 +105,7 @@ export const PokemonPage: React.FC = () => {
             </Flex>
             <Flex style={boxStyleSearch} justify={'center'} align={'center'}>
                 <Search 
-                    placeholder="Pokemon search..." 
+                    placeholder="Pokemon search by name or number..." 
                     enterButton="Search" 
                     size="large"
                     onSearch={onSearch}

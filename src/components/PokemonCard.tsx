@@ -19,6 +19,8 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({id, name, frontDefault,
 
     const [actions, setActions] = useState<Array<React.ReactNode>>([]);
 
+    const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1)
+
     useEffect(() => {
         if(isFavorite){
             setActions([heartFilled])
@@ -29,11 +31,11 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({id, name, frontDefault,
 
     return (
         <Card
-            style={{ width: 200 }}
+            style={{ width: 200, textAlign: 'center' }}
             cover={<img alt={name} src={frontDefault} />}
             actions={actions}
         >
-            <Meta title={name}/>
+            <Meta title={nameCapitalized}/>
         </Card>
     )
 };
